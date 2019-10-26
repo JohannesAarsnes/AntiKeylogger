@@ -1,0 +1,19 @@
+﻿<Application x:Class="AntiKeyloggerUI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:aux="clr-namespace:AntiKeyloggerUI.Auxiliary"
+             StartupUri="View/MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <aux:ConvertEnumToDescription x:Key="EnumToDescription"/>
+                    <aux:IsStringEmptyConvertor x:Key="IsStringEmptyConvertor"/>
+                </ResourceDictionary>
+                <ResourceDictionary Source="/Resource/Style/MainViewStyle.xaml"/>
+                <ResourceDictionary Source="/Resource/Template/MainViewTemplate.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/ToastNotifications.Messages;component/Themes/Default.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

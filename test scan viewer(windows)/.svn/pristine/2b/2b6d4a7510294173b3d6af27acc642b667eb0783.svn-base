@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5D1F282-345B-420C-927D-592822488079}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExchangeModel</RootNamespace>
+    <AssemblyName>ExchangeModel</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="InputSimulator">
+      <HintPath>Import\InputSimulator.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsInput">
+      <HintPath>Import\WindowsInput.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Auxiliary\CheckSum.cs" />
+    <Compile Include="Auxiliary\XArrayExtension.cs" />
+    <Compile Include="Enum\BaudRate.cs" />
+    <Compile Include="Enum\DataBits.cs" />
+    <Compile Include="Enum\RequestCode.cs" />
+    <Compile Include="Enum\ResponseCode.cs" />
+    <Compile Include="Event\CommunicationErrorEvent.cs" />
+    <Compile Include="Event\CommunicationReceiveEvent.cs" />
+    <Compile Include="Event\CommunicationStateChangeEvent.cs" />
+    <Compile Include="Interface\IExchangeEventProcess.cs" />
+    <Compile Include="Interface\IExchanger.cs" />
+    <Compile Include="Model\Exchanger.cs" />
+    <Compile Include="Model\ExchangerCrypto.cs" />
+    <Compile Include="Model\Packet.cs" />
+    <Compile Include="Model\RequestData.cs" />
+    <Compile Include="Model\Response.cs" />
+    <Compile Include="Model\ScanCodeHelper.cs" />
+    <Compile Include="Model\SerialLine.cs" />
+    <Compile Include="Model\StaffingHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,9 @@
+G:\SVNRepositors\Программа - Ретранслятор сканкодов клавиатуры\Исходники\ExchangeModel\bin\Debug\ExchangeModel.dll
+G:\SVNRepositors\Программа - Ретранслятор сканкодов клавиатуры\Исходники\ExchangeModel\bin\Debug\ExchangeModel.pdb
+G:\SVNRepositors\Программа - Ретранслятор сканкодов клавиатуры\Исходники\ExchangeModel\bin\Debug\InputSimulator.dll
+G:\SVNRepositors\Программа - Ретранслятор сканкодов клавиатуры\Исходники\ExchangeModel\bin\Debug\InputSimulator.pdb
+G:\SVNRepositors\Программа - Ретранслятор сканкодов клавиатуры\Исходники\ExchangeModel\obj\Debug\ExchangeModel.csprojAssemblyReference.cache
+G:\SVNRepositors\Программа - Ретранслятор сканкодов клавиатуры\Исходники\ExchangeModel\obj\Debug\ExchangeModel.csproj.CoreCompileInputs.cache
+G:\SVNRepositors\Программа - Ретранслятор сканкодов клавиатуры\Исходники\ExchangeModel\obj\Debug\ExchangeModel.csproj.CopyComplete
+G:\SVNRepositors\Программа - Ретранслятор сканкодов клавиатуры\Исходники\ExchangeModel\obj\Debug\ExchangeModel.dll
+G:\SVNRepositors\Программа - Ретранслятор сканкодов клавиатуры\Исходники\ExchangeModel\obj\Debug\ExchangeModel.pdb
